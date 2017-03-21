@@ -38,15 +38,21 @@ void SSTF::run()
 			int odl1 = abs(it->second.getBlock() - hardDrive.getPosition());
 			int odl2 = abs(it2->second.getBlock() - hardDrive.getPosition());
 			if (odl1 <= odl2) {
-				distance += hardDrive.moveTo(it->second.getBlock());
+				int move = hardDrive.moveTo(it->second.getBlock());
+				distance += move;
+				time += move;
 				map.erase(it);
 			}
 			else if (odl2 < odl1) {
-				distance += hardDrive.moveTo(it2->second.getBlock());
+				int move = hardDrive.moveTo(it2->second.getBlock());
+				distance += move;
+				time += move;
 				map.erase(it2);
 			}
 		}
-		time++;
+		else {
+			time++;
+		}
 		for (; !waitList.empty() && time >= waitList[0].getDelay(); )
 		{
 			map[waitList[0].getBlock()] = waitList[0];

@@ -22,9 +22,13 @@ void FCFS::run()
 		if (queue.size() > 0) {
 			AccessTask tmp = queue.front();
 			queue.pop();
-			distance += hardDrive.moveTo(tmp.getBlock());
+			int move = hardDrive.moveTo(tmp.getBlock());
+			distance += move;
+			time += move;
 		}
-		time++;
+		else {
+			time++;
+		}
 		for (;!waitList.empty() && time >= waitList[0].getDelay(); )
 		{
 			queue.push(waitList[0]);

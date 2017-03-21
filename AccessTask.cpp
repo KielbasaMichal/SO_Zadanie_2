@@ -23,12 +23,12 @@ AccessTask::~AccessTask()
 }
 
 
-int AccessTask::getBlock()
+int AccessTask::getBlock() const
 {
 	return accessBlock;
 }
 
-int AccessTask::getDelay()
+int AccessTask::getDelay() const
 {
 	return delay;
 }

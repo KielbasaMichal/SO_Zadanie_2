@@ -144,18 +144,22 @@
   <ItemGroup>
     <ClCompile Include="AccessTask.cpp" />
     <ClCompile Include="CScan.cpp" />
+    <ClCompile Include="EDF.cpp" />
     <ClCompile Include="FCFS.cpp" />
     <ClCompile Include="HardDrive.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RealTimeTask.cpp" />
     <ClCompile Include="Scan.cpp" />
     <ClCompile Include="SSTF.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AccessTask.h" />
     <ClInclude Include="CScan.h" />
+    <ClInclude Include="EDF.h" />
     <ClInclude Include="FCFS.h" />
     <ClInclude Include="HardDrive.h" />
     <ClInclude Include="head.h" />
+    <ClInclude Include="RealTimeTask.h" />
     <ClInclude Include="Scan.h" />
     <ClInclude Include="SSTF.h" />
   </ItemGroup>

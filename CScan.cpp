@@ -33,14 +33,20 @@ void CScan::run()
 			if (it == map.end()) {
 				distance += hardDrive.moveTo(hardDrive.START_BLOCK);
 				time++;
-				distance += hardDrive.moveTo(hardDrive.END_BLOCK);
+				int move = hardDrive.moveTo(hardDrive.END_BLOCK);
+				distance += move;
+				time += move;
 			}
 			else {
-				distance += hardDrive.moveTo(it->second.getBlock());
+				int move = hardDrive.moveTo(it->second.getBlock());
+				distance += move;
+				time += move;
 				map.erase(it);
 			}
 		}
-		time++;
+		else {
+			time++;
+		}
 		for (; !waitList.empty() && time >= waitList[0].getDelay(); )
 		{
 			map[waitList[0].getBlock()] = waitList[0];

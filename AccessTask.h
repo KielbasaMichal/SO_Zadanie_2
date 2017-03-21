@@ -10,7 +10,7 @@ public:
 	AccessTask(int block, int time);
 	~AccessTask();
 	
-	int getBlock();
-	int getDelay();
+	int getBlock() const;
+	int getDelay() const;
 };
 

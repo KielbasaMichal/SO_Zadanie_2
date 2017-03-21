@@ -36,6 +36,12 @@
     <ClCompile Include="CScan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RealTimeTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EDF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HardDrive.h">
@@ -57,6 +63,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CScan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RealTimeTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EDF.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
