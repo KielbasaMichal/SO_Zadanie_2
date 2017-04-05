@@ -26,7 +26,7 @@ void EDF::run()
 	int time = 0;
 	while (!queue.empty() || !waitList.empty()) {
 		if (queue.size() > 0) {
-			AccessTask tmp = queue.top();
+			RealTimeTask tmp = queue.top();
 			queue.pop();
 			int move = hardDrive.moveTo(tmp.getBlock());
 			distance += move;

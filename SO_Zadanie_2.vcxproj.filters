@@ -36,10 +36,13 @@
     <ClCompile Include="CScan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="EDF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="RealTimeTask.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="EDF.cpp">
+    <ClCompile Include="FDSCAN.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,10 +68,13 @@
     <ClInclude Include="CScan.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="EDF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="RealTimeTask.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="EDF.h">
+    <ClInclude Include="FDSCAN.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

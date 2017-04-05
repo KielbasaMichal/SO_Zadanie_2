@@ -11,7 +11,15 @@ HardDrive::~HardDrive()
 
 int HardDrive::moveTo(int block)
 {
-	std::cout << "block: " << block << std::endl;
+	return moveTo(block, true);
+}
+
+int HardDrive::moveTo(int block, bool statistic)
+{
+	if (statistic)
+	{
+		std::cout << block << ", ";
+	}
 	int tmp = abs(block - positionHead);
 	positionHead = block;
 	return tmp;
